@@ -1,6 +1,7 @@
 import Greet from "./components/greeting"
 import Sales from "./components/topsales";
 import ProductList from "./components/productlist";
+import Order from "./components/orders/order";
 
 function App () {                               
     const itemdetails = {
@@ -37,15 +38,13 @@ function App () {
         },
 
     ]
-
-    
-
     return(
         
         <div>
             <Greet name="aali" age={30}/>
             <Sales features={itemdetails}/>
             <ProductList featuress={productlist} />
+            <Order status="shipped"/>
         </div>
     )
 }
