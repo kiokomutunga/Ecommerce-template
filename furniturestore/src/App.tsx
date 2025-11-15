@@ -2,6 +2,7 @@ import Greet from "./components/greeting"
 import Sales from "./components/topsales";
 import ProductList from "./components/productlist";
 import Order from "./components/orders/order";
+import Button from "./components/ui/button";
 
 function App () {                               
     const itemdetails = {
@@ -45,6 +46,9 @@ function App () {
             <Sales features={itemdetails}/>
             <ProductList featuress={productlist} />
             <Order status="shipped"/>
+            <Button handleclick ={() => {
+                console.log("button clicked")
+            }} />
         </div>
     )
 }
