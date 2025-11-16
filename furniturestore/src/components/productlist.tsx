@@ -12,7 +12,7 @@ const ProductList = (props: productlistprops) => {
 
         <div>
             {
-                props.featuress.map((item)=>
+            props.featuress.map((item) =>
                 {
                     return(
                         <h2 key={item.name}>

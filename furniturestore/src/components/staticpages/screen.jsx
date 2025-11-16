@@ -10,6 +10,11 @@ function ScreenSize(){
             windows.addEventListener("resize", handleResize);
             console.log("added event listener");
 
+            return () =>{
+                window.removeEventListener("resize", handleResize);
+                console.log("removed event listener");
+            }
+
 
         },[]);
 
@@ -18,7 +23,7 @@ function ScreenSize(){
         setHeight(window.innerHeight);
     }
 
-    
+
 
 
 }
