@@ -3,6 +3,7 @@ import Sales from "./components/topsales";
 import ProductList from "./components/productlist";
 import Order from "./components/orders/order";
 import Button from "./components/ui/button";
+import HeroSection from "./components/staticpages/Heropage";
 
 function App () {                               
     const itemdetails = {
@@ -43,6 +44,7 @@ function App () {
         
         <div>
             <Greet name="aali" age={30}/>
+            <HeroSection />       
             <Sales features={itemdetails}/>
             <ProductList featuress={productlist} />
             <Order status="shipped"/>
